@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  node:
+      image: animales
+      deploy:
+        replicas: 5
+      volumes:
+        - ./server:/servidor
+      ports:
+        - "3005:3007"
